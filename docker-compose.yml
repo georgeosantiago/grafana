@@ -1,0 +1,38 @@
+version: "3.7"  
+
+services:
+    grafana:
+        container_name: grafana    
+        restart: unless-stopped
+        image: grafana/grafana
+        hostname: grafana
+        domainname: grafana
+        
+        user: "root"      
+#        environment:
+#            - "GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource,alexanderzobnin-zabbix-app"
+#            - "GF_LOG_MODE=console file"
+        networks:
+            - gra-tier
+        ports:
+          - 3000:3000
+          
+        volumes:
+          - ./etc-grafana/grafana.ini:/etc/grafana/grafana.ini
+          - ./lib-grafana:/var/lib/grafana          
+          - ./log-grafana:/var/log/grafana
+                    
+#          - ./etc-grafana:/etc/grafana
+#          - ./share-grafana:/usr/share/grafana
+#          - grafana-storage:/var/lib/grafana
+              
+networks:
+    gra-tier:
+        name: gra-tier
+        driver: bridge
+
+#volumes:
+#    grafana-storage:
+#        name: grafana-storage  
+
+   

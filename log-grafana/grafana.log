@@ -1,0 +1,31 @@
+t=2021-03-13T22:32:32+0000 lvl=info msg="Starting Grafana" logger=server version=7.4.3 commit=010f20c1c8 branch=HEAD compiled=2021-02-24T10:29:10+0000
+t=2021-03-13T22:32:32+0000 lvl=info msg="Config loaded from" logger=settings file=/usr/share/grafana/conf/defaults.ini
+t=2021-03-13T22:32:32+0000 lvl=info msg="Config loaded from" logger=settings file=/etc/grafana/grafana.ini
+t=2021-03-13T22:32:32+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.data=/var/lib/grafana"
+t=2021-03-13T22:32:32+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.logs=/var/log/grafana"
+t=2021-03-13T22:32:32+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.plugins=/var/lib/grafana/plugins"
+t=2021-03-13T22:32:32+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.provisioning=/etc/grafana/provisioning"
+t=2021-03-13T22:32:32+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.log.mode=console"
+t=2021-03-13T22:32:32+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_DATA=/var/lib/grafana"
+t=2021-03-13T22:32:32+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_LOGS=/var/log/grafana"
+t=2021-03-13T22:32:32+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PLUGINS=/var/lib/grafana/plugins"
+t=2021-03-13T22:32:32+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PROVISIONING=/etc/grafana/provisioning"
+t=2021-03-13T22:32:32+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_LOG_MODE=console file"
+t=2021-03-13T22:32:32+0000 lvl=info msg="Path Home" logger=settings path=/usr/share/grafana
+t=2021-03-13T22:32:32+0000 lvl=info msg="Path Data" logger=settings path=/var/lib/grafana
+t=2021-03-13T22:32:32+0000 lvl=info msg="Path Logs" logger=settings path=/var/log/grafana
+t=2021-03-13T22:32:32+0000 lvl=info msg="Path Plugins" logger=settings path=/var/lib/grafana/plugins
+t=2021-03-13T22:32:32+0000 lvl=info msg="Path Provisioning" logger=settings path=/etc/grafana/provisioning
+t=2021-03-13T22:32:32+0000 lvl=info msg="App mode production" logger=settings
+t=2021-03-13T22:32:32+0000 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2021-03-13T22:32:32+0000 lvl=info msg="Starting DB migrations" logger=migrator
+t=2021-03-13T22:32:32+0000 lvl=info msg="Starting plugin search" logger=plugins
+t=2021-03-13T22:32:32+0000 lvl=info msg="Registering plugin" logger=plugins id=input
+t=2021-03-13T22:32:32+0000 lvl=info msg="Registering plugin" logger=plugins id=alexanderzobnin-zabbix-datasource
+t=2021-03-13T22:32:32+0000 lvl=info msg="Registering plugin" logger=plugins id=alexanderzobnin-zabbix-triggers-panel
+t=2021-03-13T22:32:32+0000 lvl=info msg="Registering plugin" logger=plugins id=alexanderzobnin-zabbix-app
+t=2021-03-13T22:32:32+0000 lvl=info msg="Registering plugin" logger=plugins id=grafana-clock-panel
+t=2021-03-13T22:32:32+0000 lvl=info msg="Registering plugin" logger=plugins id=grafana-simple-json-datasource
+t=2021-03-13T22:32:32+0000 lvl=info msg=Profiler logger=plugins.backend pluginId=alexanderzobnin-zabbix-datasource enabled=false
+t=2021-03-13T22:32:32+0000 lvl=info msg="HTTP Server Listen" logger=http.server address=[::]:3000 protocol=http subUrl= socket=
+t=2021-03-13T22:35:28+0000 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
